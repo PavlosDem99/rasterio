@@ -9,6 +9,7 @@ import os
 import rasterio._loading
 with rasterio._loading.add_gdal_dll_directories():
     from rasterio._base import gdal_version
+    from rasterio.crs import CRS
     from rasterio.drivers import driver_from_extension, is_blacklisted
     from rasterio.dtypes import (
         bool_,
